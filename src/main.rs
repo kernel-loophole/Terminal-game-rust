@@ -17,6 +17,7 @@ fn main() {
 
     loop {
         // Non-blocking read of user input
+        //testing using A and D KEY
         if event::poll(Duration::from_millis(100)).unwrap() {
             if let Event::Key(KeyEvent { code, .. }) = event::read().unwrap() {
                 match code {
